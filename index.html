@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Photódex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Photódex: Gotta snap 'em all!'">
+  <meta name="author" content="JT Atomico">
+  <meta property="og:image" content="preview.jpg" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="loading">
+
+  <div id="banner">
+    <h1>PHOTÓDEX</h1>
+    <h2 class="hidden-while-loading">GOTTA SNAP 'EM ALL!</h2>
+    <h2 class="hidden-when-loaded">LOADING <span class="fa fa-spinner fa-pulse"></span></h2>
+  </div>
+  <div id="content">
+    <div id="readme">
+      <p>
+        If you would like to create your own Photódex see the README
+        <a href="https://github.com/jamiehumphries/photodex">here</a>.
+      </p>
+      <p>
+        You will need a working knowledge of <a href="https://git-scm.com/">Git</a>
+        and a <a href="https://github.com/">GitHub</a> account.
+      </p>
+    </div>
+    <div id="entries" class="hidden-while-loading"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
