@@ -25,7 +25,8 @@ $(function () {
   function buildEntry(profile) {
     var $entry = $('<a/>', {
       "class": 'entry',
-      href: photodexUrl(profile)
+      href: photodexUrl(profile),
+      target: '_blank'
     }).append($('<img/>', {
       "class": 'profile',
       src: 'profiles/' + profile.username + '.png'
