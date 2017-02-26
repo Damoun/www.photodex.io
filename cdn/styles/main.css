@@ -5,6 +5,7 @@ body {
   color: #F0F0FF;
   font-family: "Lato", sans-serif;
   overflow-y: scroll;
+  margin: 0;
 }
 
 body.no-scroll {
@@ -41,6 +42,10 @@ body:not(.loading) .hidden-when-loaded {
 #banner h2 {
   font-size: 20px;
   color: #B6A9DE;
+}
+
+#content {
+  margin: 8px;
 }
 
 #entries {
