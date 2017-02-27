@@ -188,7 +188,7 @@ $(function () {
   function setCurrentSnap(snap) {
     _currentSnap = snap;
     if (snap) {
-      location.hash = snap;
+      history.replaceState(null, null, '#' + snap);
     } else {
       clearHash();
     }
@@ -218,11 +218,7 @@ $(function () {
 
   function clearHash(number) {
     if (!getSnapFromHash()) return;
-    if (history && history.pushState) {
-      history.pushState({}, document.title, location.pathname);
-      $window.hashchange();
-    } else {
-      location.hash = '';
-    }
+    history.replaceState(null, null, location.pathname);
+    $window.hashchange();
   }
 });
